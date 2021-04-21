@@ -1,0 +1,30 @@
+.statistics {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.stat {
+  padding: 0;
+  display: flex;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(241, 237, 237);
+}
+.label {
+  margin-bottom: 10px;
+}

@@ -1,23 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import defaultImg from './default.png';
+import styles from './Friends.module.css';
 
 const Friends = ({ avatar, name, isOnline }) => (
-  <div>
-    <span className="status">кружок {isOnline ? 'зеленый' : 'красный'}</span>
-    <img className="avatar" src={avatar} width="48" alt="Friend's avatar" />
-    <p className="name">{name}</p>
+  <div className={styles.wrapper}>
+    <span
+      className={styles.status}
+      style={{ backgroundColor: isOnline ? 'green' : 'red' }}
+    ></span>
+    <img
+      className={styles.avatar}
+      src={avatar}
+      width="48"
+      alt="Friend's avatar"
+    />
+    <p className={styles.name}>{name}</p>
   </div>
 );
 
 Friends.defaultProps = {
   avatar: defaultImg,
-  name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
 };
 
 Friends.propTypes = {
   avatar: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };
 
 export default Friends;

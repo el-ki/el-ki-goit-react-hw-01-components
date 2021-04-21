@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+}

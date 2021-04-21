@@ -1,0 +1,29 @@
+table {
+  border-spacing: 0px;
+}
+
+.transactionDescription {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.transactionItems {
+  text-align: center;
+}
+
+.content:nth-child(2n) {
+  background-color: rgb(241, 237, 237);
+}
+
+.type,
+.amount,
+.currency {
+  width: 33.3%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 10px 10px;
+}
+
+.title {
+  background-color: rgb(162, 224, 243);
+}
